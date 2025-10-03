@@ -1,55 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera web en html</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Bonita</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #90c0d0;
+      margin: 40px auto;
+      max-width: 900px;
+      border: 4px solid black;
+      border-radius: 30px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #1caf55;
+      background-color: #ffeb3b;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 34px;
+      border: 4px solid #894eae;
+      text-align: center;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .img1 {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      border: 4px solid #8d1f1f;
+      padding: 5px;
+      background-color: white;
+      object-fit: cover;
+    }
+
+    .parrafo_negrita,
+    .parrafo_subrayado {
+      text-align: center;
+      margin: 15px auto;
+      max-width: 80%;
+    }
+
+    .parrafo_negrita {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .parrafo_subrayado {
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .fondo_rojo,
+    .fondo_blanco {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 80%;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .fondo_rojo {
+      background-color: #ff6347;
+      color: white;
+    }
+
+    .fondo_rojo:hover,
+    .fondo_blanco:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive para móviles */
+    @media (max-width: 600px) {
+      body {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 26px;
+        padding: 15px;
+      }
+
+      .fondo_rojo,
+      .fondo_blanco {
+        max-width: 100%;
+        margin: 10px 0;
+      }
+
+      .img1 {
+        width: 150px;
+      }
+    }
+
+    /* Estilo para el botón de enlace */
+    .boton-enlace {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #894eae;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .boton-enlace:hover {
+      background-color: #6b3e8e;
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <h1>Mi primera web en html</h1>
-    </div>
+  <h1>¡Bienvenido a Mi Página!</h1>
+  
+  <img src="https://via.placeholder.com/200" alt="Foto de perfil" class="img1"/>
 
-    <div>
-         <p class="parrafo_negrita"> Esta es mi primera web en html</p>
-    </div>
-    
-    <div> 
-        <img class="img1" src="https://media.istockphoto.com/id/2210780943/es/foto/woman-with-cute-kitten-at-home-closeup.webp?s=1024x1024&w=is&k=20&c=QSZ9Wc2OnEu1CEpCxiPt8cYj58kTAPp3QwMSDUSHJfE=" >
-   </div>
-   
-   <div>   
-    <p class="parrafo_subrayado">Estoy aprendiendo a crear páginas web con html</p>
-    </div>
+  <p class="parrafo_negrita">Este es un párrafo importante con negrita centrada.</p>
+  <p class="parrafo_subrayado">Este es un párrafo subrayado para destacar algo especial.</p>
 
-    <div> 
-    <h2> Deberes para hoy</h2>
-    <ul>
-        <li>matemáticas</li>
-        <li>física</li>
-        <li>química</li>
-        <li>biología</li>
-    </ul>
-   </div>
-   <div class="fondo_rojo">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet adipisci reiciendis? Totam ipsam labore sint nulla error nisi ullam nostrum amet, odio consequatur tempore necessitatibus quod voluptas incidunt iure.
-    </div>
-   <div class="fondo_blanco">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet adipisci reiciendis? Totam ipsam labore sint nulla error nisi ullam nostrum amet, odio consequatur tempore necessitatibus quod voluptas incidunt iure.
-    </div>
-    <div class="fondo_rojo">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet adipisci reiciendis? Totam ipsam labore sint nulla error nisi ullam nostrum amet, odio consequatur tempore necessitatibus quod voluptas incidunt iure.
-    </div>
-    <div class="fondo_blanco">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet adipisci reiciendis? Totam ipsam labore sint nulla error nisi ullam nostrum amet, odio consequatur tempore necessitatibus quod voluptas incidunt iure.
-    </div>
+  <div class="fondo_rojo">
+    Este bloque tiene fondo rojo y un estilo más moderno.
+  </div>
 
+  <div class="fondo_blanco">
+    Este bloque tiene fondo blanco con bordes suaves y centrado.
+  </div>
 
-   
-   <div>
-   <a href="https://www.cestasylotesparanavidad.com"> mi pagina de cestas y lotes</a>
-    </div> 
-    
+  <!-- ENLACE A OTRA PÁGINA -->
+  <div style="text-align: center;">
+    <a 
+      href="https://www.cestasylotesparanavidad.com" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="boton-enlace"
+    >
+      Ir a Cestas y Lotes para Navidad 🎁
+    </a>
+  </div>
+  <link rel="stylesheet" href="estilos.css">
+
 </body>
 </html>
